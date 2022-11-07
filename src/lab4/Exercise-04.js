@@ -16,5 +16,5 @@ const fib3 = memoize (function (n) {
     return fib3 (n - 1) + fib3 (n - 2)
 })
 
-valu = fib3 (10);
+valu = fib3 (5);
 console.log(valu);
