@@ -7,7 +7,6 @@ const memoize = (fn) => {
         return cache [x]
     }
 }
-
 const fib3 = memoize (function (n) {
     if (n <= 1) {
         return 1
