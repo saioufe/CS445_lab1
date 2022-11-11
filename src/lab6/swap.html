@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="resources/image1.jpg" id="image1"/>
+    <button  id="swap">Swap</button>
+    <img src="resources/image2.jpg" id="image2"/>
+<script>
+    let button = document.getElementById("swap");
+    button.onclick = function (){
+        let firstImage = document.getElementById("image1").src;
+        let secondImage = document.getElementById("image2").src;
+        document.getElementById("image1").src=secondImage;
+        document.getElementById("image2").src=firstImage;
+    }
+</script>
+</body>
+</html>

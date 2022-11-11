@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Addition Calculator</title>
+</head>
+<body>
+<h1> Exercise 02</h1>
+<div>
+    <input type="text" id="num-one"> + <input type="text" id="num-two">
+</div>
+<h2 id="add-sum"></h2>
+</body>
+<script>
+    let numOne = document.getElementById('num-one');
+    let numTwo = document.getElementById('num-two');
+    let addSum = document.getElementById('add-sum');
+    numOne.addEventListener('input', add);
+    numTwo.addEventListener('input', add);
+    function add() {
+        let one = parseFloat(numOne.value) || 0;
+        let two = parseFloat(numTwo.value) || 0;
+        addSum.innerText = one+two;
+    }
+</script>
+</html>
